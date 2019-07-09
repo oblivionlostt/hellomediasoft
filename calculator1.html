@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <script>
+      function switch_operator(op, a,b) {
+  let res;
+  switch(op)
+  {
+  case "+" : res = a + b;
+  break;
+  case "-" : res = a - b;
+  break;
+  case "*" : res = a * b;
+  break;
+  case "/": res = a / b;
+  break;
+  }
+  return res;
+  }
+
+  const x= +prompt("Введите x?",100);
+  const y= +prompt("Введите y?",100);
+  const z= prompt("введите + - / *");
+  let result;
+
+  result = switch_operator(z, x, y);
+  alert(result);
+      </script> 
+  </body>
+</html>
